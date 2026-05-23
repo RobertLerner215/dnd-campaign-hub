@@ -2,25 +2,40 @@
 import "phoenix_html"
 
 // Establish Phoenix Socket and LiveView configuration.
+import Chart from "chart.js/auto"
 import { Socket } from "phoenix"
 import { hooks as colocatedHooks } from "phoenix-colocated/app"
 import { LiveSocket } from "phoenix_live_view"
 import topbar from "../vendor/topbar"
 
 // ------------------------
-// 🔥 CUSTOM HOOKS
+// CUSTOM HOOKS
 // ------------------------
 
 let Hooks = {}
 
-// ✅ AUTOSCROLL
+// CHART.JS HOOK
+Hooks.Chart = {
+  mounted() {
+    this.el._chart = new Chart(this.el, JSON.parse(this.el.dataset.config))
+  },
+
+  updated() {
+    const newConfig = JSON.parse(this.el.dataset.config)
+    this.el._chart.data = newConfig.data
+    this.el._chart.options = newConfig.options
+    this.el._chart.update()
+  },
+}
+
+// AUTOSCROLL
 Hooks.AutoScroll = {
   updated() {
     this.el.scrollTop = this.el.scrollHeight
   }
 }
 
-// ✅ FOCUS INPUT AFTER SEND
+// FOCUS INPUT AFTER SEND
 Hooks.FocusInput = {
   mounted() {
     this.handleEvent("focus-input", () => {
@@ -32,7 +47,7 @@ Hooks.FocusInput = {
   }
 }
 
-// 🔥 LOGOUT HOOK (NEW)
+// LOGOUT HOOK
 Hooks.LogoutButton = {
   mounted() {
     this.handleEvent("logout", () => {
@@ -53,7 +68,7 @@ const csrfToken = document
 let liveSocketPath =
   process.env.NODE_ENV === "production" ? "/csci379f/live" : "/live"
 
-// 🔥 MERGE HOOKS (YOU ALREADY DID THIS RIGHT)
+// MERGE HOOKS
 const liveSocket = new LiveSocket(liveSocketPath, Socket, {
   longPollFallbackMs: 2500,
   params: { _csrf_token: csrfToken },

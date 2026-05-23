@@ -9,6 +9,12 @@ defmodule App.Repo.Migrations.CreateCharacters do
       add :level, :integer
       add :hp, :integer
       add :armor_class, :integer
+      add :strength, :integer
+      add :dexterity, :integer
+      add :constitution, :integer
+      add :intelligence, :integer
+      add :wisdom, :integer
+      add :charisma, :integer
       add :notes, :text
       add :user_id, references(:users, type: :id, on_delete: :delete_all)
 

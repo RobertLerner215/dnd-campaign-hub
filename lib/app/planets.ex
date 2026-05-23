@@ -2,7 +2,7 @@ defmodule App.Planets do
   @moduledoc """
   A context to retrieve data of our solar system.
   """
-  
+
   def get_planet(id) do
     case :ets.lookup(:planets, id) do
       [{_id, planet}] -> planet

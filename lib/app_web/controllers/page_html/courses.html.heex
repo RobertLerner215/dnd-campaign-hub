@@ -1,0 +1,56 @@
+<div class="px-10 py-10 text-white">
+  <%= if @semester do %>
+    <.link class="btn btn-outline btn-sm mb-4" href={~p"/courses"}>
+      ← {gettext("Back to All Courses")}
+    </.link>
+  <% end %>
+
+  <h1 class="text-4xl font-bold mb-2">
+    <%= if @semester do %>
+      {gettext("Courses for")} {slug_to_semester(@semester)}
+    <% else %>
+      {gettext("All Courses")}
+    <% end %>
+  </h1>
+
+  <p class="text-gray-300 text-lg mb-6">
+    {gettext(
+      "This page provides an overview of the available courses for the selected semester. Use the navigation buttons below to filter courses by term and explore the offerings for Fall 2025 or Spring 2026."
+    )}
+  </p>
+
+  <div class="flex gap-2 mb-6">
+    <.link class="btn btn-sm" href={~p"/courses"}>
+      {gettext("All")}
+    </.link>
+
+    <.link class="btn btn-sm btn-outline" href={~p"/courses/fall_2025"}>
+      {gettext("Fall 2025")}
+    </.link>
+
+    <.link class="btn btn-sm btn-outline" href={~p"/courses/spring_2026"}>
+      {gettext("Spring 2026")}
+    </.link>
+  </div>
+
+  <div class="overflow-x-auto">
+    <table class="table table-zebra w-full">
+      <thead>
+        <tr>
+          <th>{gettext("Number")}</th>
+          <th>{gettext("Title")}</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <%= for course <- @courses do %>
+          <tr>
+            <td>{course.number}</td>
+            <td>{course.title}</td>
+            <!-- ✅ FIXED -->
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

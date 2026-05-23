@@ -13,6 +13,8 @@ defmodule App.Application do
       {DNSCluster, query: Application.get_env(:app, :dns_cluster_query) || :ignore},
       {Phoenix.PubSub, name: App.PubSub},
 
+      # ETS GenServer for Minesweeper
+      App.ETS,
 
       # Start to serve requests, typically the last entry
       AppWeb.Endpoint

@@ -169,6 +169,14 @@ defmodule AppWeb.Components.UI.Navbar do
           {gettext("Minesweeper")}
         </.link>
 
+        <.link navigate={~p"/charts"} class="text-blue-300 hover:underline">
+          {gettext("Charts")}
+        </.link>
+
+        <.link href={~p"/dnd"} class="text-red-400 font-bold hover:underline">
+          {gettext("D&D")}
+        </.link>
+
         <AppWeb.Components.UI.Button.language_toggle locale={@locale} />
 
         <.link

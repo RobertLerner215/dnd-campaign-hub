@@ -41,6 +41,8 @@ defmodule Mix.Tasks.Deploy do
     MIX_ENV=prod mix ecto.migrate > /dev/null || { exit 1; } && \
     echo "Running seeds..." && \
     MIX_ENV=prod mix run priv/repo/seeds.exs > /dev/null || { exit 1; } && \
+    echo "Installing npm dependencies..." && \
+    cd assets && npm install > /dev/null || { exit 1; } && cd .. && \
     echo "Deploying assets..." && \
     MIX_ENV=prod mix assets.deploy > /dev/null || { exit 1; } && \
     echo "(Re)starting server in tmux..." && \
