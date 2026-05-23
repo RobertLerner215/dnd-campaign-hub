@@ -1,0 +1,131 @@
+msgid "Home"
+msgstr "Startseite"
+
+msgid "Courses"
+msgstr "Kurse"
+
+msgid "Planets"
+msgstr "Planeten"
+
+msgid "Planets (LiveView)"
+msgstr "Planeten (LiveView)"
+
+msgid "Topics"
+msgstr "Themen"
+
+msgid "Pages"
+msgstr "Seiten"
+
+msgid "Messages"
+msgstr "Nachrichten"
+
+msgid "Chat"
+msgstr "Chat"
+
+msgid "Pokemon Mash"
+msgstr "Pokemon Spiel"
+
+msgid "Logout"
+msgstr "Abmelden"
+
+msgid "All Courses"
+msgstr "Alle Kurse"
+
+msgid "Back to All Courses"
+msgstr "Zurück zu allen Kursen"
+
+msgid "Courses for"
+msgstr "Kurse für"
+
+msgid "All"
+msgstr "Alle"
+
+msgid "Fall 2025"
+msgstr "Herbst 2025"
+
+msgid "Spring 2026"
+msgstr "Frühling 2026"
+
+msgid "Number"
+msgstr "Nummer"
+
+msgid "Title"
+msgstr "Titel"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Name"
+msgstr "Name"
+
+msgid "Distance"
+msgstr "Entfernung"
+
+msgid "Orbital Period"
+msgstr "Umlaufzeit"
+
+msgid "Sorting is done in the database. Click headers to toggle asc or desc."
+msgstr "Sortierung erfolgt in der Datenbank. Klicken Sie auf die Spaltenüberschriften zum Wechseln."
+
+msgid "Open Modal"
+msgstr "Modal öffnen"
+
+msgid "Close"
+msgstr "Schließen"
+
+msgid "My Modal"
+msgstr "Mein Modal"
+
+msgid "Robert Lerner"
+msgstr "Robert Lerner"
+
+msgid "Computer Science Student • Bucknell Track & Field Athlete"
+msgstr "Informatikstudent • Bucknell Leichtathlet"
+
+msgid "I am passionate about software engineering, operating systems, and building full stack web applications. I know Java, Python, C, and Elixir. I throw the shotput and discus for Bucknell and previously wrestled."
+msgstr "Ich interessiere mich für Softwareentwicklung, Betriebssysteme und Full-Stack-Webanwendungen. Ich kenne Java, Python, C und Elixir. Ich stoße Kugel und werfe Diskus für Bucknell und habe früher gerungen."
+
+msgid "Outside of coding, I enjoy playing Dungeons and Dragons, lifting weights, and gaming. My favorite games are Dark Souls 3, Terraria, and Minecraft."
+msgstr "Außerhalb des Programmierens spiele ich gerne Dungeons and Dragons, trainiere und spiele Videospiele. Meine Lieblingsspiele sind Dark Souls 3, Terraria und Minecraft."
+
+msgid "Elixir & Phoenix"
+msgstr "Elixir & Phoenix"
+
+msgid "Operating Systems"
+msgstr "Betriebssysteme"
+
+msgid "Algorithms"
+msgstr "Algorithmen"
+
+msgid "Track & Field"
+msgstr "Leichtathletik"
+
+msgid "This is my modal content."
+msgstr "Dies ist mein Modal-Inhalt."
+
+msgid "This page provides an overview of the available courses for the selected semester. Use the navigation buttons below to filter courses by term and explore the offerings for Fall 2025 or Spring 2026."
+msgstr "Diese Seite bietet eine Übersicht über die verfügbaren Kurse für das ausgewählte Semester. Verwenden Sie die Navigationsschaltflächen unten, um Kurse nach Semester zu filtern und die Angebote zu erkunden."
+
+msgid "Algorithm Design & Analysis"
+msgstr "Algorithmusdesign und Analyse"
+
+msgid "Biology for Non-majors"
+msgstr "Biologie für Nicht-Majoren"
+
+msgid "Buddhism"
+msgstr "Buddhismus"
+
+msgid "Senior Design I"
+msgstr "Senior Design I"
+
+msgid "Athletic Time Block All"
+msgstr "Athletik Zeitblock"
+
+msgid "Full Stack Web Development"
+msgstr "Full-Stack-Webentwicklung"
+
+msgid "Senior Design II"
+msgstr "Senior Design II"
+
+msgid "Sustaining Nature"
+msgstr "Nachhaltige Natur"

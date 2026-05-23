@@ -1,0 +1,62 @@
+<.container class="py-16">
+  <button
+    type="button"
+    phx-click={AppWeb.Components.UI.Modal.open_modal("modal")}
+    class="mb-8 text-white bg-blue-600 hover:bg-blue-700 px-5 py-2.5 rounded-lg"
+  >
+    {gettext("Open Modal")}
+  </button>
+
+  <.modal id="modal" heading={gettext("My Modal")}>
+    <p>
+      {gettext("This is my modal content.")}
+    </p>
+
+    <button
+      type="button"
+      phx-click={AppWeb.Components.UI.Modal.close_modal("modal")}
+      class="mt-4 text-white bg-red-600 hover:bg-red-700 px-5 py-2.5 rounded-lg"
+    >
+      {gettext("Close")}
+    </button>
+  </.modal>
+
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <h1 class="text-4xl font-bold text-blue-400 mb-6">
+        {gettext("Robert Lerner")}
+      </h1>
+
+      <span class="block text-blue-300 font-semibold mb-4">
+        {gettext("Computer Science Student • Bucknell Track & Field Athlete")}
+      </span>
+
+      <p class="mb-6 text-lg">
+        {gettext(
+          "I am passionate about software engineering, operating systems, and building full stack web applications. I know Java, Python, C, and Elixir. I throw the shotput and discus for Bucknell and previously wrestled."
+        )}
+      </p>
+
+      <p class="mb-6 text-lg">
+        {gettext(
+          "Outside of coding, I enjoy playing Dungeons and Dragons, lifting weights, and gaming. My favorite games are Dark Souls 3, Terraria, and Minecraft."
+        )}
+      </p>
+
+      <ul class="list-disc list-inside space-y-2 text-lg">
+        <li>{gettext("Elixir & Phoenix")}</li>
+        <li>{gettext("Operating Systems")}</li>
+        <li>{gettext("Algorithms")}</li>
+        <li>{gettext("Track & Field")}</li>
+      </ul>
+    </div>
+
+    <div class="flex justify-center">
+      <img
+        src={~p"/images/profile.jpg"}
+        alt={gettext("Robert throwing discus")}
+        class="w-80 rounded-xl border-4 border-blue-500 dark:border-blue-400 shadow-lg"
+      />
+    </div>
+  </div>
+</.container>

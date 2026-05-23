@@ -1,0 +1,13 @@
+<h1 class="text-3xl font-bold text-white mb-4">
+  {@planet.name}
+</h1>
+
+<div class="text-white space-y-2">
+  <p><strong>ID:</strong> {@planet.id}</p>
+  <p><strong>Distance:</strong> {@planet.distance}</p>
+  <p><strong>Orbital Period:</strong> {@planet.orbital_period}</p>
+</div>
+
+<.link navigate={~p"/planets"} class="text-blue-400 underline mt-4 inline-block">
+  ← Back to Planets
+</.link>

@@ -1,0 +1,26 @@
+<.navbar />
+
+<div class="h-20 bg-amber-500 flex items-center px-6">
+  Header
+</div>
+
+<div>
+  {render_slot(@inner_block)}
+</div>
+
+<!-- Keep badge demo for grading -->
+<div class="p-6 space-x-2">
+  <.badge color="default">Default</.badge>
+  <.badge color="dark">Dark</.badge>
+  <.badge color="red">Red</.badge>
+  <.badge color="green">Green</.badge>
+  <.badge color="yellow">Yellow</.badge>
+  <.badge color="indigo">Indigo</.badge>
+  <.badge color="purple">Purple</.badge>
+  <.badge color="pink">Pink</.badge>
+
+  <br /><br />
+
+  <.badge color="default" large>Large Default</.badge>
+  <.badge color="red" large>Large Red</.badge>
+</div>

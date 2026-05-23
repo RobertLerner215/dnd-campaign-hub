@@ -1,0 +1,113 @@
+msgid ""
+msgstr ""
+
+msgid "Algorithms"
+msgstr "Algorithmen"
+
+msgid "All"
+msgstr "Alle"
+
+msgid "All Courses"
+msgstr "Alle Kurse"
+
+msgid "Back to All Courses"
+msgstr "Zurück zu allen Kursen"
+
+msgid "Chat"
+msgstr "Chat"
+
+msgid "Close"
+msgstr "Schließen"
+
+msgid "Computer Science Student • Bucknell Track & Field Athlete"
+msgstr "Informatikstudent • Bucknell Leichtathlet"
+
+msgid "Courses"
+msgstr "Kurse"
+
+msgid "Courses for"
+msgstr "Kurse für"
+
+msgid "Distance"
+msgstr "Entfernung"
+
+msgid "Elixir & Phoenix"
+msgstr "Elixir & Phoenix"
+
+msgid "Fall 2025"
+msgstr "Herbst 2025"
+
+msgid "Home"
+msgstr "Startseite"
+
+msgid "I am passionate about software engineering, operating systems, and building full stack web applications. I know Java, Python, C, and Elixir. I throw the shotput and discus for Bucknell and previously wrestled."
+msgstr "Ich interessiere mich sehr für Softwareentwicklung, Betriebssysteme und Full-Stack-Webanwendungen. Ich kenne Java, Python, C und Elixir. Ich werfe Kugelstoßen und Diskus für Bucknell und habe früher gerungen."
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Logout"
+msgstr "Abmelden"
+
+msgid "Messages"
+msgstr "Nachrichten"
+
+msgid "My Modal"
+msgstr "Mein Modal"
+
+msgid "Name"
+msgstr "Name"
+
+msgid "Number"
+msgstr "Nummer"
+
+msgid "Open Modal"
+msgstr "Modal öffnen"
+
+msgid "Operating Systems"
+msgstr "Betriebssysteme"
+
+msgid "Orbital Period"
+msgstr "Umlaufzeit"
+
+msgid "Outside of coding, I enjoy playing Dungeons and Dragons, lifting weights, and gaming. My favorite games are Dark Souls 3, Terraria, and Minecraft."
+msgstr "Außerhalb des Programmierens spiele ich gerne Dungeons and Dragons, gehe ins Fitnessstudio und zocke. Meine Lieblingsspiele sind Dark Souls 3, Terraria und Minecraft."
+
+msgid "Pages"
+msgstr "Seiten"
+
+msgid "Planets"
+msgstr "Planeten"
+
+msgid "Planets (LiveView)"
+msgstr "Planeten"
+
+msgid "Pokemon Mash"
+msgstr "Pokemon Mash"
+
+msgid "Robert Lerner"
+msgstr "Robert Lerner"
+
+msgid "Robert throwing discus"
+msgstr "Robert beim Diskuswerfen"
+
+msgid "Sorting is done in the database. Click headers to toggle asc or desc."
+msgstr "Die Sortierung erfolgt in der Datenbank. Klicken Sie auf die Spaltenüberschriften, um die Reihenfolge zu ändern."
+
+msgid "Spring 2026"
+msgstr "Frühjahr 2026"
+
+msgid "This is my modal content."
+msgstr "Dies ist mein Modal-Inhalt."
+
+msgid "This page provides an overview of the available courses for the selected semester. Use the navigation buttons below to filter courses by term and explore the offerings for Fall 2025 or Spring 2026."
+msgstr "Diese Seite bietet einen Überblick über die verfügbaren Kurse für das ausgewählte Semester. Verwenden Sie die Navigation unten, um nach Semester zu filtern und die Angebote für Herbst 2025 oder Frühjahr 2026 zu erkunden."
+
+msgid "Title"
+msgstr "Titel"
+
+msgid "Topics"
+msgstr "Themen"
+
+msgid "Track & Field"
+msgstr "Leichtathletik"

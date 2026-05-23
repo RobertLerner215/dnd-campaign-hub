@@ -1,0 +1,40 @@
+<.header>
+  Listing Messages
+  <:actions>
+    <.link navigate={~p"/messages/new"}>
+      <button>
+        New Message
+      </button>
+    </.link>
+  </:actions>
+</.header>
+
+<.table id="messages" rows={@messages} row_click={&JS.navigate(~p"/messages/#{&1}")}>
+  <:col :let={message} label="Email">
+    {message.email}
+  </:col>
+
+  <:col :let={message} label="Subject">
+    {message.subject}
+  </:col>
+
+  <:col :let={message} label="Message">
+    {message.message}
+  </:col>
+
+  <:action :let={message}>
+    <div class="sr-only">
+      <.link navigate={~p"/messages/#{message.id}"}>Show</.link>
+    </div>
+  </:action>
+
+  <:action :let={message}>
+    <.link
+      href={~p"/messages/#{message.id}"}
+      method="delete"
+      data-confirm="Are you sure?"
+    >
+      Delete
+    </.link>
+  </:action>
+</.table>

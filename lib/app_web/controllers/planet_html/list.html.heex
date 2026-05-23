@@ -1,0 +1,46 @@
+<div class="max-w-4xl mx-auto mt-10">
+  <div class="bg-gray-800 shadow-md rounded-lg p-6">
+    <div class="flex justify-between items-center mb-6">
+      <h1 class="text-3xl font-bold text-white">
+        Planets
+      </h1>
+
+      <.link
+        navigate={~p"/planets/random"}
+        class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md transition"
+      >
+        View Random Planet
+      </.link>
+    </div>
+
+    <div class="overflow-x-auto">
+      <table class="min-w-full text-sm text-left text-gray-300">
+        <thead class="text-xs uppercase bg-gray-700 text-gray-300">
+          <tr>
+            <th class="px-6 py-3">ID</th>
+            <th class="px-6 py-3">Name</th>
+            <th class="px-6 py-3">Distance</th>
+            <th class="px-6 py-3">Orbital Period</th>
+          </tr>
+        </thead>
+        <tbody>
+          <%= for planet <- @planets do %>
+            <tr class="border-b border-gray-700 hover:bg-gray-700 transition">
+              <td class="px-6 py-4">{planet.id}</td>
+              <td class="px-6 py-4">
+                <.link
+                  navigate={~p"/planets/#{planet.id}"}
+                  class="text-blue-400 hover:underline"
+                >
+                  {planet.name}
+                </.link>
+              </td>
+              <td class="px-6 py-4">{planet.distance}</td>
+              <td class="px-6 py-4">{planet.orbital_period}</td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

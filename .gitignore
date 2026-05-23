@@ -1,0 +1,8 @@
+/_build/
+/deps/
+/.elixir_ls/
+/node_modules/
+/assets/node_modules/
+.env
+*.log
+.DS_Store

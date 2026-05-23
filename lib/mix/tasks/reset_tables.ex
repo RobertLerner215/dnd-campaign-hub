@@ -1,0 +1,29 @@
+defmodule Mix.Tasks.ResetTables do
+  use Mix.Task
+
+  @shortdoc "Deletes all tables in the database."
+
+  def run(_) do
+    # Start the application to ensure Repo is loaded
+    Mix.Task.run("app.start")
+
+    alias App.Repo
+    alias Ecto.Adapters.SQL
+
+    Mix.shell().info("Resetting tables...")
+
+    # Drop all tables
+    query = """
+    DO $$ DECLARE
+      r RECORD;
+    BEGIN
+      FOR r IN (SELECT tablename FROM pg_tables WHERE schemaname = current_schema()) LOOP
+        EXECUTE 'DROP TABLE IF EXISTS ' || quote_ident(r.tablename) || ' CASCADE';
+      END LOOP;
+    END $$;
+    """
+
+    SQL.query!(Repo, query, [])
+    Mix.shell().info("Dropped all tables.")
+  end
+end

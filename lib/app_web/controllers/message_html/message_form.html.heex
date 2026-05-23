@@ -1,0 +1,23 @@
+<.form :let={f} for={@changeset} action={@action}>
+  <%= if @changeset.action && @changeset.errors != [] do %>
+    <div class="mb-4 text-red-400">
+      Please fix the errors below.
+    </div>
+  <% end %>
+
+  <.input field={f[:email]} type="text" label="Email" />
+  <.input field={f[:subject]} type="text" label="Subject" />
+  <.input field={f[:message]} type="textarea" label="Message" />
+
+  <div class="mt-6 flex gap-4">
+    <button type="submit" variant="primary">
+      Save Message
+    </button>
+
+    <.link :if={@return_to} navigate={@return_to}>
+      <button>
+        Cancel
+      </button>
+    </.link>
+  </div>
+</.form>

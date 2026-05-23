@@ -1,0 +1,47 @@
+- id: 1
+  name: Mercury
+  moons: 0
+  distance: 57.9
+  orbital_period: 88
+
+- id: 2
+  name: Venus
+  moons: 0
+  distance: 108.2
+  orbital_period: 225
+
+- id: 3
+  name: Earth
+  moons: 1
+  distance: 149.6
+  orbital_period: 365
+
+- id: 4
+  name: Mars
+  moons: 2
+  distance: 227.9
+  orbital_period: 687
+
+- id: 5
+  name: Jupiter
+  moons: 95
+  distance: 778.5
+  orbital_period: 4333
+
+- id: 6
+  name: Saturn
+  moons: 146
+  distance: 1432.0
+  orbital_period: 10759
+
+- id: 7
+  name: Uranus
+  moons: 27
+  distance: 2867.0
+  orbital_period: 30687
+
+- id: 8
+  name: Neptune
+  moons: 14
+  distance: 4515.0
+  orbital_period: 60190
