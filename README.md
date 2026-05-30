@@ -1,23 +1,5 @@
 # App
 
-To start your Phoenix server:
-
-* Run `mix setup` to install and setup dependencies
-* Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
-
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
-
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
-
-## Learn more
-
-* Official website: https://www.phoenixframework.org/
-* Guides: https://hexdocs.pm/phoenix/overview.html
-* Docs: https://hexdocs.pm/phoenix
-* Forum: https://elixirforum.com/c/phoenix-forum
-* Source: https://github.com/phoenixframework/phoenix
-
-
 # Robert Lerner Final Project: D&D Campaign Hub
 
 ## Overview
@@ -187,46 +169,3 @@ The application includes a Chart.js LiveView page.
 Files: `lib/app/ets.ex`, `lib/app_web/live/minesweeper_live.ex`, `lib/app_web/live/rock_paper_scissors_live.ex`
 
 The app uses ETS-backed in-memory game state for Minesweeper and Rock Paper Scissors.
-
-## Bonus Items Completed
-
-### 50% Test Coverage Bonus
-
-Completed with `66.7% coverage`.
-
-### 65% Test Coverage Bonus
-
-Completed with `66.7% coverage`.
-
-The project does not claim the 80% test coverage bonus.
-
-## Testing
-
-Run tests with:
-
-`mix test`
-
-Run coverage with:
-
-`mix test --cover`
-
-Current result:
-
-`158 tests, 0 failures, 66.7% coverage`
-
-Test coverage includes D&D context logic, role-based notes, JSON API routes, dice interactions, initiative interactions, character pages, inventory pages, Minesweeper logic, Rock Paper Scissors interactions, and LiveView smoke tests.
-
-## Final Status
-
-- Project compiles.
-- Tests pass.
-- Coverage is above 65%.
-- D&D hub works.
-- Authentication works for notes.
-- JSON API works.
-- Character image uploads work.
-- Inventory associations work.
-- Dice roller works.
-- Initiative tracker works.
-- Quest board works.
-- Public deployment works.
